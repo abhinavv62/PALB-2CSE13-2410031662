@@ -1,7 +1,9 @@
-def union_arrays(a, b):
-    return list(set(a) | set(b))
+def kth_smallest(arr, k):
+    arr.sort()
+    return arr[k - 1]
 
 
-a = [1, 2, 3, 2, 1]
-b = [3, 2, 2, 3, 3, 2]
-print(sorted(union_arrays(a, b)))
+arr = [10, 5, 4, 3, 48, 6, 2, 33, 53, 10]
+k = 4
+print(kth_smallest(arr, k))
+
